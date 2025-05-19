@@ -15,16 +15,13 @@
 
 <?php
 session_start();
-// Check if user is already logged in
 if (isset($_SESSION['user'])) {
     header("Location: dashboard.php");
     exit;
 }
 
-// Check if there's an error message
 if (isset($_SESSION['login_error'])) {
     echo '<div class="alert alert-danger">' . $_SESSION['login_error'] . '</div>';
-    // Clear the error message after displaying it
     unset($_SESSION['login_error']);
 }
 ?>
