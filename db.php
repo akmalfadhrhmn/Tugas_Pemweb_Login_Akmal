@@ -3,7 +3,7 @@
 $host = "localhost";
 $user ="root";
 $password ="";
-$db = "kuis_pemweb";
+$db = "latihan_login_db";
 
 $conn = mysqli_connect($host, $user, $password, $db);
 if (!$conn) {
